@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+  </script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+  <form>
+    Payment: 
+    <input type="radio" name="payment_select" value="credit_card" class="payment_select">   Credit Card
+    <input type="radio" name="payment_select" value="wire_transfer" class="payment_select">   Wire Transfer
+    <br>
+    <span class="credit_card">Card Number:</span>
+    <input type="text" name="card_number" size="16" class="credit_card">
+    <span class="credit_card">Expiration:</span>
+    <input type="text" name="expiraton_m" size="2" class="credit_card">
+    <span class="credit_card">/</span>
+    <input type="text" name="expiration_y" size="2" class="credit_card">
+     <span class="credit_card">3-digit security number:</span>
+    <input type="text" name="security_num" size="3" class="credit_card">
+    <p class="wire_transfer">Transfer the amount to:reg. $957.00, 
+      to account 0009286322 (in English)</p>
+    <input type="submit" value="Buy!">
+  </form>
+  <ul>
+    Remove items?
+    <li class="removable">Bedsheets</li>
+    <li class="removable">Lamp</li>
+    <li class="removable">Chair</li>
+    <li class="removable">Computer Monitor</li>
+  </ul>
+  <div id="trash_can">
+  <img  src="./images/trash.png"
+       alt="Trash Can" style="width:60px;">
+  </div>
+    <ul >
+      Click for More Information
+    <li>
+      <button class="informationable" value="bedsheets">Bedsheets</button>
+    </li>
+    <li>
+      <button class="informationable" value="lamp">Lamp</button>
+    </li>
+    <li>
+      <button class="informationable" value="chair">Chair</button>
+    </li>
+    <li>
+      <button class="informationable" value="computermonitor">Computer Monitor</button>
+    </li>
+  </ul>
+  <div id="more_info">
+    info will appear hear.
+  </div>
+</body>
+
+</html>
